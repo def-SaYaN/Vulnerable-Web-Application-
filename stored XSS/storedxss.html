@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stored XSS</title>
+	<link rel="stylesheet" type="text/css" href="stylestorexss.css">
+</head>
+<body>
+		<div class="header">
+			<h2>Stored XSS</h2>
+		</div>
+		   		<form method="get" action="storexss.php">
+				<div class="input-group">
+					<label>Enter Your Name </label>
+					<input type="text" name="username" autocomplete=off required>
+				</div>
+				<div class="input-group">
+					<label>Comment</label>
+					<textarea name="comment" rows="25" cols="50"></textarea>
+				</div>
+				<div class="radio-button">
+					<input type="radio" class="radio" name="security" value="Low" required>Low</input>
+					<input type="radio" class="radio" name="security" value="High" required>High</input>			
+				</div>
+				<div class="input-group">
+					<button type="submit" name="submit" class="btn">Submit</button>
+				</div>
+				
+		        </form>
+
+</body>
